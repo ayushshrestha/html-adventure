@@ -1,0 +1,9 @@
+
+.main-menu {
+    li {
+        display: inline-block;
+        &:not(:first-child){
+            margin-left: 30px;
+        }
+    }
+}

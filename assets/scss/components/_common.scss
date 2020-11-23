@@ -1,0 +1,27 @@
+
+body {
+    color: #324148;
+    font-family: $font-body;
+    font-weight: $font-normal;
+}
+
+p::-moz-selection{
+    background-color:$default;
+    color:$white;
+}
+p::selection{
+    background-color:$default;
+    color:$white;
+}
+::-moz-selection{
+    background-color:$default;
+    color:$white;
+}
+::selection{
+    background-color:$default;
+    color:$white;
+}
+
+.h-100vh {
+    height: 100vh;
+}

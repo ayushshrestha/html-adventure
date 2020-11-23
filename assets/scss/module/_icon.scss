@@ -1,0 +1,30 @@
+$iconlist: facebook twitter instagram envelope pin phone;
+@each $iconSvg in $iconlist{
+    .icon-#{$iconSvg}{
+        background: url("../images/icon/svg/#{$iconSvg}.svg") no-repeat center center;
+        background-size: 100% 100%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        // background-color: #5c5c5c;
+        // background-repeat: no-repeat;
+        // background-image: url("../images/icon/svg/#{$iconSvg}.svg");
+        // -webkit-mask-image: url("../images/icon/svg/#{$iconSvg}.svg");
+        // mask-image: url("../images/icon/svg/#{$iconSvg}.svg");
+        // -webkit-mask-repeat: no-repeat;
+        // mask-repeat: no-repeat;
+    }
+}
+
+
+.icon {
+    display: inline-block;
+    &-xs {
+        width: 18px;
+        height: 15px;
+    }
+    &-md {
+        width: 35px;
+        height: 25px;
+    }
+}

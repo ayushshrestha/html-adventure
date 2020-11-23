@@ -1,0 +1,13 @@
+
+
+.btn {
+    padding-left: 3em;
+    padding-right: 3em;
+    &-default {
+        background-color: $default;
+        &:hover {
+            background-color: $black;
+        }
+    }
+}
+

@@ -1,0 +1,31 @@
+
+$font-body : 'Open Sans', sans-serif;
+$font-title : 'Quicksand', sans-serif;
+
+$font-size-base: 0.875rem; // Assumes the browser default, typically `16px`
+$font-size-lg: 56px;
+$font-size-sm: 3.5em;
+$font-size-xs: 24px;
+$font-size-xxs: 13px;
+
+
+$font-normal: 400;
+$font-bold: 700;
+
+
+.font-normal {
+    font-weight: $font-normal;
+}
+
+// .font-weight-bold {
+//     font-weight: $font-bold;
+// }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+    font-weight: $font-normal;
+}
+
+h2 {
+    font-size: $font-size-sm;
+}
