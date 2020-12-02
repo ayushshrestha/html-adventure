@@ -1,9 +1,14 @@
 $(document).ready(function(){
-    // var headerInfo = $('.masthead-info').outerHeight();
-    // alert(headerInfo);
 
-    // $('.hero-agrimove').css('margin-top', headerInfo);
-    // $('.hero-agrimove').css('height', headerInfo);
+    function adjustHeight(){
+		var headerH = $('header').outerHeight();
+		$('#wrapper').css('padding-top', headerH);
+	}
+	adjustHeight();
+	$(window).on("resize", function() {
+		adjustHeight();
+	});
+
 
     new WOW().init();
 
@@ -11,8 +16,13 @@ $(document).ready(function(){
         offset: 112
     });
 
-
-    // $(".alert").alert('close');
-
+    $('.slick-default').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    
 
 });
+
+

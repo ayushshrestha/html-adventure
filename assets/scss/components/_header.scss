@@ -1,0 +1,64 @@
+.masthead {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    &-info {
+        color:  $white;
+        font-size: $font-size-xxs;
+        li:not(:first-child) {
+            @include media-breakpoint-up(sm){                
+                border-left:solid 1px #515563;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            @include media-breakpoint-up(md){
+                border-left:solid 1px #515563;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .link {
+            color:  $text-header-info;
+        }
+    } // masthead info ends
+}
+
+.info {
+    // padding-left: 100px !important;
+    @include media-breakpoint-up(md){
+        padding-left: 200px !important;
+    }
+    @include media-breakpoint-up(lg){
+        padding-left: 200px !important;
+    }
+    .icon {  
+        margin-right: 5px;
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+}
+
+// logo starts here 
+
+#logo {
+    margin-bottom:0;
+    @include media-breakpoint-down(sm){
+        // position: fixed;
+        // top:0;
+        // left:0;
+        max-width: 100px;
+    
+        img {
+            vertical-align: top;
+        }
+    }
+    @include media-breakpoint-up(md){
+        max-width: 180px;
+        margin-top: -43px;
+    }
+}
+
+// logo ends here 
+
+
