@@ -25,3 +25,29 @@ p::selection{
 .h-100vh {
     height: 100vh;
 }
+
+.container {
+    max-width: 1400px;
+}
+
+.left-0 {
+    left:0;
+}
+.top-0 {
+    top:0;
+}
+.right-0 {
+    right:0;
+}
+.bottom-0 {
+    bottom:0;
+}
+
+.z-index {
+    &-0 {
+        z-index: 0;
+    }
+    &-1 {
+        z-index: 1;
+    }
+}

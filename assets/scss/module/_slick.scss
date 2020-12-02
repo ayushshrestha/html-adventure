@@ -1,0 +1,24 @@
+.slick {
+    &-prev, &-next {
+        z-index: 1;
+    }
+    &-prev {
+        left:15px;
+    }  // slick next prev ends here
+    &-next {
+        right:15px;
+    }  // slick next prev ends here
+    &-caption {
+        @include media-breakpoint-down(sm){
+            position: relative !important;
+            background-color: $black;
+            padding: 20px 0;
+        }
+    
+        h2 {
+            @include media-breakpoint-down(sm){
+                font-size: 1.3em;
+            }
+        }
+    } // slick caption ends here 
+}

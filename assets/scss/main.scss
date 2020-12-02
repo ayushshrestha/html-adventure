@@ -11,14 +11,9 @@
 @import 'module/font';
 @import 'module/icon';
 @import 'module/menu';
-
 @import 'module/alert';
+@import 'module/slick';
+
 
 @import 'components/common';
-@import 'components/home/header';
-@import 'components/home/hero';
-// @import 'components/home/about';
-// @import 'components/home/wecaterto';
-// @import 'components/home/farmer';
-// @import 'components/home/reachus';
-@import 'components/home/footer';
+@import 'components/header';
