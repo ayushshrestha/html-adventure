@@ -11,5 +11,19 @@
             background-color: $black;
         }
     }
+
+    &-link {
+        &:after {
+            background:url(../images/arrow-right.svg) right center no-repeat;
+            content:"";
+            display: inline-block;
+            width: 14px;
+            height: 11px;
+        }
+        padding-left:0;
+        padding-top:0;
+        padding-right: 15px;
+        font-size: 14px;
+    }
 }
 

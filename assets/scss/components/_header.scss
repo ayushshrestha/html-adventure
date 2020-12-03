@@ -5,16 +5,16 @@
     &-info {
         color:  $white;
         font-size: $font-size-xxs;
-        li:not(:first-child) {
-            @include media-breakpoint-up(sm){                
-                border-left:solid 1px #515563;
-                padding-left: 5px;
-                padding-right: 5px;
+        li {
+            @include media-breakpoint-down(sm){                
+                padding-right: 10px;
             }
-            @include media-breakpoint-up(md){
-                border-left:solid 1px #515563;
-                padding-left: 5px;
-                padding-right: 5px;
+            &:not(:first-child) {
+                @include media-breakpoint-up(md){
+                    border-left:solid 1px #515563;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
             }
         }
         .link {

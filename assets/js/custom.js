@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     function adjustHeight(){
-		var headerH = $('header').outerHeight();
+		var headerH = $('.masthead-info').outerHeight();
 		$('#wrapper').css('padding-top', headerH);
 	}
 	adjustHeight();
@@ -17,11 +17,21 @@ $(document).ready(function(){
     });
 
     $('.slick-default').slick({
-        infinite: true,
+        infinite: false,
+        fade: true,
         slidesToShow: 1,
         slidesToScroll: 1
     });
     
+
+    $('.slick-customWidth').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
 
 });
 
