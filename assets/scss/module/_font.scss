@@ -3,7 +3,7 @@ $font-body : 'Open Sans', sans-serif;
 $font-title : 'Quicksand', sans-serif;
 
 $font-size-base: 0.875rem; // Assumes the browser default, typically `16px`
-$font-size-lg: 56px;
+$font-size-lg: 40px;
 $font-size-sm: 3.5em;
 $font-size-xs: 24px;
 $font-size-xxs: 13px;
@@ -27,5 +27,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: $font-size-sm;
+    font-size: $font-size-lg;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 18px;
+    color: #242A3A;
 }

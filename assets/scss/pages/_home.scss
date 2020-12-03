@@ -1,0 +1,52 @@
+
+
+
+.b-special {
+
+    .slick {
+        &-slide {
+            .title-line {
+                padding-bottom: 15px;
+                &:after {
+                    width:45px;
+                    height: 1px;
+                    content: "";
+                    display: block;
+                    background-color: $white;
+                }
+            }
+            &:hover {
+                .title-line {
+                    &:after {
+                        width:45px;
+                        height: 1px;
+                        content: "";
+                        display: block;
+                        vertical-align: bottom;
+                        background-color: $white;
+                    }
+                }
+                .btn-link {
+                    opacity: 1;
+                    visibility: visible;
+                    &:after {
+                        width: 14px;
+                    }
+                }
+            }
+            .btn-link {
+                opacity: 0;
+                transition: 0.4s ease;
+                visibility: hidden;
+                &:after {
+                    transition: 1s ease;
+                    width: 7px;
+                }
+            }
+        }
+        &-caption {
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 70%);
+        } //  slick caption css ends here 
+    } // slick special css ends here
+} // block special css ends here 
