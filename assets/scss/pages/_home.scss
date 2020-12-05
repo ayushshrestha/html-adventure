@@ -3,7 +3,7 @@ html {
     // overflow-y: overlay;
 }
 
-.b-special {
+.block-special {
     // .row {
     //     margin-right: -20%;
     // }
@@ -67,3 +67,15 @@ html {
         } //  slick caption css ends here 
     } // slick special css ends here
 } // block special css ends here 
+
+
+// block welcome adventure
+
+.bg-mountain {
+    background-image: url('../images/bg-mountain.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// block welcome adventure ends here
