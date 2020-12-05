@@ -1,5 +1,17 @@
 
 .bg {
+    &-center {
+        background-position: center center;
+        &-top {
+            background-position: center top;
+        }
+    }
+    &-repeat-no {
+        background-repeat: no-repeat;
+    }
+    &-cover {
+        background-size: cover;
+    }
     &-default {
         background-color: $default;
         color: $white;
@@ -46,6 +58,9 @@
     &-default {
         color: $default !important;
     }
+    &-secondary {
+        color: $secondary !important;
+    }
     // &-white {
     //     // color: $white !important;
     // }
@@ -63,3 +78,8 @@
 
 // text color ends
 
+// border 
+.border-radius-0 {
+    border-radius: 0;
+}
+// border ends
