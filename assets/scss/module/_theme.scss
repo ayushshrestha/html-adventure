@@ -1,5 +1,17 @@
 
 .bg {
+    &-center {
+        background-position: center center;
+        &-top {
+            background-position: center top;
+        }
+    }
+    &-repeat-no {
+        background-repeat: no-repeat;
+    }
+    &-cover {
+        background-size: cover;
+    }
     &-default {
         background-color: $default;
         color: $white;

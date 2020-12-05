@@ -7,7 +7,7 @@ $font-size-base: 0.875rem; // Assumes the browser default, typically `16px`
 $font-size-lg: 40px;
 $font-size-sm: 3.5em;
 $font-size-xs: 24px;
-$font-size-xxs: 13px;
+$font-size-xxs: 14px;
 
 
 $font-normal: 400;
@@ -44,4 +44,8 @@ h5 {
 h6, .h6 {
     font-size: 18px;
     color: #242A3A;
+}
+
+.font-xs {
+    font-size: $font-size-xxs;  
 }

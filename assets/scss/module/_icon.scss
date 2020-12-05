@@ -1,7 +1,7 @@
-$iconlist: facebook twitter instagram envelope pin phone;
+$iconlist: pin currency time;
 @each $iconSvg in $iconlist{
     .icon-#{$iconSvg}{
-        background: url("../images/icon/svg/#{$iconSvg}.svg") no-repeat center center;
+        background: url("../images/svg/outline-#{$iconSvg}.svg") no-repeat center center;
         background-size: 100% 100%;
         display: block;
         width: 100%;
@@ -19,9 +19,11 @@ $iconlist: facebook twitter instagram envelope pin phone;
 
 .icon {
     display: inline-block;
+    width: 24px;
+    height: 24px;
     &-xs {
-        width: 18px;
-        height: 15px;
+        width: 24px;
+        height: 24px;
     }
     &-md {
         width: 35px;
