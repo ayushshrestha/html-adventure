@@ -14,7 +14,7 @@
 
     &-link {
         &:after {
-            background:url(../images/arrow-right.svg) right center no-repeat;
+            background:url(../images/svg/arrow-right.svg) right center no-repeat;
             content:"";
             display: inline-block;
             width: 14px;
@@ -24,6 +24,13 @@
         padding-top:0;
         padding-right: 15px;
         font-size: 14px;
-    }
-}
+    } // btn link ends here 
+
+    &-outline-secondary {
+        color: $secondary;
+        border-color: $secondary;
+    } // btn outline secondary ends here
+} // btn ends here 
+
+
 

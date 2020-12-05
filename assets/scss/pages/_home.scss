@@ -1,38 +1,54 @@
 
-
+html {
+    // overflow-y: overlay;
+}
 
 .b-special {
-
+    // .row {
+    //     margin-right: -20%;
+    // }
     .slick {
         &-slide {
+            @include media-breakpoint-down(sm){
+                img  {
+                    width: 100%;
+                }
+            }
+            @include media-breakpoint-up(sm){
+                margin-right: 30px;
+            }
+            position: relative;
             .title-line {
+                position: relative;
                 padding-bottom: 15px;
                 &:after {
-                    width:45px;
+                    transition: 0.4s ease;
+                    position: absolute;
+                    bottom: 0;
+                    width: 0px;
+                    opacity: 0;
+                    visibility: hidden;
                     height: 1px;
                     content: "";
                     display: block;
                     background-color: $white;
                 }
-            }
+            } // title line ends
             &:hover {
                 .title-line {
                     &:after {
                         width:45px;
-                        height: 1px;
-                        content: "";
-                        display: block;
-                        vertical-align: bottom;
-                        background-color: $white;
+                        opacity: 1;
+                        visibility: visible;
                     }
-                }
+                } // hover title line ends
                 .btn-link {
                     opacity: 1;
                     visibility: visible;
                     &:after {
                         width: 14px;
                     }
-                }
+                } // hover btn link ends
             }
             .btn-link {
                 opacity: 0;
@@ -45,6 +61,7 @@
             }
         }
         &-caption {
+            position: absolute !important;
             background: rgb(0,0,0);
             background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 70%);
         } //  slick caption css ends here 

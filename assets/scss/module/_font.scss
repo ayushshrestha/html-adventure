@@ -1,6 +1,7 @@
 
-$font-body : 'Open Sans', sans-serif;
-$font-title : 'Quicksand', sans-serif;
+$font-body :  'Nunito Sans', sans-serif;
+$font-title : 'Playfair Display', serif;
+
 
 $font-size-base: 0.875rem; // Assumes the browser default, typically `16px`
 $font-size-lg: 40px;
@@ -10,6 +11,7 @@ $font-size-xxs: 13px;
 
 
 $font-normal: 400;
+$font-semi-bold: 600;
 $font-bold: 700;
 
 
@@ -17,13 +19,18 @@ $font-bold: 700;
     font-weight: $font-normal;
 }
 
-// .font-weight-bold {
-//     font-weight: $font-bold;
-// }
+body {
+    font-family: $font-body;
+    font-weight: $font-normal;
+}
 
-h1, h2, h3, h4, h5, h6 {
+h2 {
     font-family: $font-title;
     font-weight: $font-normal;
+}
+h1,  h3, h4, h5, h6 {
+    font-family: $font-body;
+    font-weight: $font-semi-bold;
 }
 
 h2 {
