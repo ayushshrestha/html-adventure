@@ -220,3 +220,41 @@ html {
 }
 
 // block departure time ends here
+
+
+// block latest article 
+
+.block-latestarticle {
+    .card {
+        border:0;
+        border-bottom: solid 1px #EAEAEA;
+        &-title {
+            @include media-breakpoint-up(md){
+                min-height: 68px;
+            }
+        }
+    }
+    .date {
+        color: #B8B8B8;
+        font-size: 14px;
+    }
+}
+
+// block latest article ends here 
+
+
+// block testimonials
+
+.block-testimonials {
+    &:before {
+        width: 50%;
+        content: "";
+        display: block;
+        background-color: $green;
+        height: 100%;
+        position: absolute;
+        top:0;
+    }
+}
+
+// block testimonials ends here

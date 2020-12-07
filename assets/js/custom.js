@@ -54,12 +54,37 @@ $(document).ready(function(){
             }
         ]
     });
+    
+
+    $('.slick-testimonials').slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        fade: false,
+        prevArrow: false,
+        nextArrow: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+
+    
 
     $('.custom-slick_next').click(function(){
         $('.slick-customWidth').slick("slickNext");
+        $('.slick-testimonials').slick("slickNext");
     });
     $('.custom-slick_prev').click(function(){
         $('.slick-customWidth').slick("slickPrev");
+        $('.slick-testimonials').slick("slickPrev");
     });
 
 });
