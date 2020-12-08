@@ -5,6 +5,9 @@
         &-top {
             background-position: center top;
         }
+        &-bottom {
+            background-position: center bottom;
+        }
     }
     &-repeat-no {
         background-repeat: no-repeat;
@@ -49,6 +52,9 @@
     &-cream {
         background-color: $bg-cream;
     } // bg cream ends 
+    &-white {
+        background-color: $white;
+    }
 }
 // bg color ends 
 
@@ -61,19 +67,12 @@
     &-secondary {
         color: $secondary !important;
     }
-    // &-white {
-    //     // color: $white !important;
-    // }
-    
-}
-
-.text {
-    &-default {
-        color: $default !important;
+    &-green {
+        color: $green !important;
     }
     &-white {
         color: $white !important;
-    }
+    }    
 }
 
 // text color ends

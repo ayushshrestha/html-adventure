@@ -12,6 +12,17 @@
         }
     }
 
+    &-green {
+        padding-top: 11px 24px;
+        background-color: $green;
+        color: $white;
+        border-radius: 0;
+        &:hover {
+            color: $white;
+            background-color: $default;
+        }
+    }
+
     &-link {
         &:after {
             background:url(../images/svg/arrow-right.svg) right center no-repeat;
