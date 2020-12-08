@@ -247,13 +247,16 @@ html {
 
 .block-testimonials {
     &:before {
-        width: 50%;
+        width: 100%;
         content: "";
         display: block;
         background-color: $green;
         height: 100%;
         position: absolute;
         top:0;
+        @include media-breakpoint-up(md){
+            width: 50%;
+        }
     }
     .slick {
         &-slide {
