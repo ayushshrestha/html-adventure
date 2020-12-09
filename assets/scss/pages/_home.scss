@@ -191,11 +191,14 @@ html {
         }
     }
     &_title {
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(md){
             margin-left: -22%;
             z-index: 10;
             position: relative;
             max-width: 289px;
+        }
+        @include media-breakpoint-only(md){
+            margin-left: -42%;
         }
     }
     &_price {
