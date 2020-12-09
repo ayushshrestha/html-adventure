@@ -35,6 +35,9 @@
         padding-top:0;
         padding-right: 15px;
         font-size: 14px;
+        &:hover {
+            color: $green;
+        }
     } // btn link ends here 
 
     &-outline-secondary {
