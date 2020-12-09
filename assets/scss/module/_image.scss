@@ -33,6 +33,9 @@
             object-position: center top;
             width: 100%;
             height: 100%;
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     } // figure image
 
