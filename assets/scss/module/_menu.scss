@@ -1,3 +1,9 @@
+@media (max-width: 991px){
+    .freezeScroll, .freezeScroll body {
+        overflow-y: hidden;
+    }
+}
+
 .navbar-toggler {
     @include media-breakpoint-down(sm){
         position: absolute;
@@ -8,6 +14,13 @@
 
 
 .main-menu {
+    #topMenu {
+        @include media-breakpoint-down(sm){
+            height: calc(100vh - 100px);
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    }    
     a {
         color: $white;
         font-size: 14px;
@@ -17,18 +30,27 @@
         }
     }
     li {
+        @include media-breakpoint-down(sm){
+            border-bottom:solid 1px rgba(255,255,255,0.1);
+            padding:10px 0;
+        }
         @include media-breakpoint-up(md){
             display: inline-block;
         }
         &:not(:first-child){
-            @include media-breakpoint-up(md){
+            @include media-breakpoint-between(md, lg){
+                margin-left: 4px;
+            }
+            @include media-breakpoint-up(xl){
                 margin-left: 15px;
             }
         }
         
         &:last-child ul{
-            right: 0;
-            left: inherit;
+            @include media-breakpoint-up(lg){
+                right: 0;
+                left: inherit;
+            }
         }
     }
 }
@@ -36,8 +58,13 @@
 
 .submenu {
     position: relative;
-    @include media-breakpoint-up(md){
+    // @include media-breakpoint-up(md){
         &:after {
+            @include media-breakpoint-down(sm){
+                position: absolute;
+                right:0;
+                top:21px;
+            }
             display: inline-block;
             margin-left: .255em;
             vertical-align: .1em;
@@ -48,7 +75,7 @@
             border-top-color: rgb(255, 255, 255);
             border-left: .3em solid transparent;
         }
-    }   
+    // }   
     &:hover {
         // &:after {
         //     display: none;

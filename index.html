@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="assets/css/main.min.css" rel="stylesheet">
-  <script src="assets/js/vendor/jquery.min.js"></script>
 
 </head>
 
@@ -21,14 +20,17 @@
     <div class="py-2 py-md-3 py-md-2 bg-dark-purple masthead-info">
       <div class="container">
         <div class="d-md-flex">
-          <ul class="info list-unstyled mb-0">
+          <h1 id="logo" class="mt-0 d-none d-md-block d-lg-none">
+            <a href=""><img alt="Adventure" src="assets/images/logo.png" title="Adventure" class="img-fluid"/></a>
+          </h1> <!-- logo ends here -->
+          <ul class="info list-unstyled mb-0 pl-0">
             <li class="d-inline-block mr-md-2">Nepal Gov. Reg. No: 116524/070/071</li>
             <li class="d-inline-block">Tourism Reg. No: 1644/070</li>
             <li class="d-inline-block">TAAN Reg No. 0668</li>
           </ul> <!-- register info ends here -->
-          <ul class="list-unstyled pt-1 pt-md-0 mb-0 ml-auto">
+          <ul class="list-unstyled pt-1 pt-md-0 mb-0 ml-auto text-md-right text-lg-left">
             <li class="d-inline-block">Phone: +977 1 4420444</li>
-            <li class="d-inline-block">Cell: +977 9851052042</li>
+            <li class="d-inline-block pr-md-0">Cell: +977 9851052042</li>
           </ul> <!-- call info ends here -->
         </div> <!-- d flex header info ends here -->
       </div> <!-- header info contianer ends here -->
@@ -37,10 +39,10 @@
     <div class="bg-black bg-black-transparent-md">
       <div class="container">
         <div class="d-md-flex">
-          <h1 id="logo">
+          <h1 id="logo" class="d-md-none d-lg-block">
             <a href=""><img alt="Adventure" src="assets/images/logo.png" title="Adventure" class="img-fluid"/></a>
           </h1> <!-- logo ends here -->
-          <nav class="navbar navbar-default navbar-expand-lg navbar-dark px-0 py-md-3 pb-md-0 pt-md-0 ml-auto align-self-center main-menu" id="mainMenu">
+          <nav class="navbar navbar-default navbar-expand-md navbar-dark px-0 py-md-3 pb-md-0 pt-md-0 ml-auto align-self-center main-menu" id="mainMenu">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="topMenu" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -124,10 +126,10 @@
       </div> <!-- logo menu contianer ends here -->
     </div> <!-- bg-white-transparent py-2 logo menu ends here -->
 
-  </header> <!-- agrimove header ends -->
+  </header> <!-- header ends -->
 
   <div id="wrapper">
-    <div class="slick-default">
+    <div id="slickTop" class="slick-default">
       <div class="position-relative">
         <img alt="hero" src="assets/images/hero.jpg" class="img-fluid">
         <div class="slick-caption d-flex align-items-center align-items-md-end align-items-xl-center position-absolute top-0 left-0 right-0 h-100 z-index-1 pb-md-4 pb-xl-0">
@@ -136,7 +138,7 @@
               <div class="row">
                 <div class="col-md-8 col-lg-5">
                   <h2 class="text-white">Your Adventure Travel Expert in Nepal</h2>
-                  <a href="" class="mt-3 btn btn-default">Get Started</a>
+                  <a href="" class="mt-3 btn btn-default border-radius-0">Get Started</a>
                 </div> <!-- slick col md 4 ends here -->
               </div> <!-- slick row ends here -->
             </div> <!-- slick container ends here -->
@@ -151,7 +153,7 @@
               <div class="row">
                 <div class="col-md-8 col-lg-5">
                   <h2 class="text-white">Your Adventure Travel Expert in Nepal</h2>
-                  <a href="" class="mt-3 btn btn-default">Get Started</a>
+                  <a href="" class="mt-3 btn btn-default border-radius-0">Get Started</a>
                 </div> <!-- slick col md 4 ends here -->
               </div> <!-- slick row ends here -->
             </div> <!-- slick container ends here -->
@@ -166,7 +168,7 @@
               <div class="row">
                 <div class="col-md-8 col-lg-5">
                   <h2 class="text-white">Your Adventure Travel Expert in Nepal</h2>
-                  <a href="" class="mt-3 btn btn-default">Get Started</a>
+                  <a href="" class="mt-3 btn btn-default border-radius-0">Get Started</a>
                 </div> <!-- slick col md 4 ends here -->
               </div> <!-- slick row ends here -->
             </div> <!-- slick container ends here -->
@@ -175,7 +177,7 @@
       </div> <!-- slick item 3 ends here -->
     </div> <!-- slick-default ends here -->
     <div class="bg-cream py-5 block-special">
-      <div class="container -fluid py-3">
+      <div class="container -fluid py-3" id="container-special">
         <div class="row align-items-center">
           <div class="col-md-4">
             <div class="c-special_caption wow fadeIn" data-wow-duration="1s" data-wow-delay="0.15s" data-wow-offset="50" >
@@ -192,63 +194,65 @@
               </div> <!-- custom slick arrow ends here -->
             </div> <!-- c special caption ends here -->
           </div> <!-- col md 4 ends here -->
-          <div class="col-md-8 pr-0">
-            <div class="slick-customWidth slick-special wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.15s" data-wow-offset="50" >
-              <div>
-                <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
-                <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
-                  <div class="p-4">
-                    <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
-                    <a href="" class="btn btn-link">Discover More</a>
-                  </div>
-                </div> <!-- slick caption ends here -->
-              </div> <!-- our special slider item ends here -->
-              <div>
-                <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
-                <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
-                  <div class="p-4">
-                    <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
-                    <a href="" class="btn btn-link">Discover More</a>
-                  </div>
-                </div> <!-- slick caption ends here -->
-              </div> <!-- our special slider item ends here -->
-              <div>
-                <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
-                <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
-                  <div class="p-4">
-                    <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
-                    <a href="" class="btn btn-link">Discover More</a>
-                  </div>
-                </div> <!-- slick caption ends here -->
-              </div> <!-- our special slider item ends here -->
-              <div>
-                <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
-                <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
-                  <div class="p-4">
-                    <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
-                    <a href="" class="btn btn-link">Discover More</a>
-                  </div>
-                </div> <!-- slick caption ends here -->
-              </div> <!-- our special slider item ends here -->
-              <div>
-                <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
-                <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
-                  <div class="p-4">
-                    <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
-                    <a href="" class="btn btn-link">Discover More</a>
-                  </div>
-                </div> <!-- slick caption ends here -->
-              </div> <!-- our special slider item ends here -->
-              <div>
-                <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
-                <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
-                  <div class="p-4">
-                    <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
-                    <a href="" class="btn btn-link">Discover More</a>
-                  </div>
-                </div> <!-- slick caption ends here -->
-              </div> <!-- our special slider item ends here -->
-            </div> <!-- our special slider ends here -->
+          <div class="col-md-8 pr-0x wrapper-right">
+            <div class="wrapper-right_inside"> 
+              <div class="slick-customWidth slick-special wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.15s" data-wow-offset="50" >
+                <div>
+                  <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
+                  <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
+                    <div class="p-4">
+                      <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
+                      <a href="" class="btn btn-link">Discover More</a>
+                    </div>
+                  </div> <!-- slick caption ends here -->
+                </div> <!-- our special slider item ends here -->
+                <div>
+                  <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
+                  <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
+                    <div class="p-4">
+                      <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
+                      <a href="" class="btn btn-link">Discover More</a>
+                    </div>
+                  </div> <!-- slick caption ends here -->
+                </div> <!-- our special slider item ends here -->
+                <div>
+                  <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
+                  <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
+                    <div class="p-4">
+                      <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
+                      <a href="" class="btn btn-link">Discover More</a>
+                    </div>
+                  </div> <!-- slick caption ends here -->
+                </div> <!-- our special slider item ends here -->
+                <div>
+                  <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
+                  <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
+                    <div class="p-4">
+                      <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
+                      <a href="" class="btn btn-link">Discover More</a>
+                    </div>
+                  </div> <!-- slick caption ends here -->
+                </div> <!-- our special slider item ends here -->
+                <div>
+                  <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
+                  <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
+                    <div class="p-4">
+                      <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
+                      <a href="" class="btn btn-link">Discover More</a>
+                    </div>
+                  </div> <!-- slick caption ends here -->
+                </div> <!-- our special slider item ends here -->
+                <div>
+                  <img alt="" src="assets/images/img-special.jpg" class="img-fluid">
+                  <div class="slick-caption d-flex align-items-end position-absolute w-100 top-0 h-100 z-index-1">
+                    <div class="p-4">
+                      <h5 class="text-white d-block title-line">Bhaktapur Sight Seeing Day Tour</h5>
+                      <a href="" class="btn btn-link">Discover More</a>
+                    </div>
+                  </div> <!-- slick caption ends here -->
+                </div> <!-- our special slider item ends here -->
+              </div> <!-- our special slider ends here -->
+            </div>
           </div> <!-- col md 8 ends here -->
           <div class="pl-3 pl-md-0 offset-md-4">
             <a href="" class="ml-3 mt-5 btn btn-outline-secondary border-radius-0">View All Tours</a>
@@ -403,7 +407,7 @@
                 <td>10</td>
                 <td>$750</td>
                 <td>8</td>
-                <td><a href="" class="btn btn-green">View Trip</a></td>
+                <td><a href="" class="btn btn-green float-right">View Trip</a></td>
               </tr>
               <tr>
                 <th scope="row">2018-02-25</th>
@@ -411,7 +415,7 @@
                 <td>10</td>
                 <td>$750</td>
                 <td>8</td>
-                <td><a href="" class="btn btn-green">View Trip</a></td>
+                <td><a href="" class="btn btn-green float-right">View Trip</a></td>
               </tr>
               <tr>
                 <th scope="row">2018-02-25</th>
@@ -419,7 +423,7 @@
                 <td>10</td>
                 <td>$750</td>
                 <td>8</td>
-                <td><a href="" class="btn btn-green">View Trip</a></td>
+                <td><a href="" class="btn btn-green float-right">View Trip</a></td>
               </tr>
             </tbody>
           </table>
@@ -482,7 +486,7 @@
       </div> <!-- container latest article ends here -->
     </div> <!-- latest article ends here -->       
     <div class="position-relative py-5 block-testimonials">
-      <div class="container py-3">
+      <div class="container py-3" id="container-special">
         <div class="row align-items-center">
           <div class="col-md-4">
             <div class="c-special_caption text-center text-md-left">
@@ -498,107 +502,109 @@
               </div> <!-- custom slick arrow ends here -->
             </div> <!-- c special caption ends here -->
           </div> <!-- col md 4 ends here -->
-          <div class="col-md-8 px-md-0">
-            <div class="slick-testimonials">
-              <div>
-                <div class="row no-gutters align-items-center h-100 testimonial-bg">
-                    <div class="col-4 py-5 testimonial-left">
-                      <div class="px-4">
-                        <div class="testimonial-user mx-auto">
-                            <img src="assets/images/img-special.jpg" alt="Testimonials">
+          <div class="col-md-8 px-md-0 wrapper-right">
+            <div class="wrapper-right_inside">
+              <div class="slick-testimonials">
+                <div>
+                  <div class="row no-gutters align-items-center h-100 testimonial-bg">
+                      <div class="col-sm-4 py-5 testimonial-left">
+                        <div class="px-4">
+                          <div class="testimonial-user mx-auto">
+                              <img src="assets/images/img-special.jpg" alt="Testimonials">
+                          </div>
+                          <div class="testimonial-user_name text-black pt-3">
+                            Chris Adams
+                          </div>       
+                          <div class="testimonial-user_location pt-1">
+                            Cape Town Central, South Africa
+                          </div>
+                        </div>              
+                      </div><!-- col 4 user pics ends here -->
+                      <div class="col-sm-8 py-5 bg-white">
+                        <div class="px-4 testimonial-content">
+                          <h4>Manaslu circuit with group of 5</h4>
+                          <div class="float-left">
+                            <ul class="mb-0 rating list-unstyled">
+                              <li><a href=""></a></li>
+                              <li><a href=""></a></li>
+                              <li><a href=""></a></li>
+                            </ul>of 25 Reviews</div> 
+                          <div class="d-inline-block ml-2 pl-2 mt-2 mt-sm-0 date mb-3 mb-xl-0">December, 23, 2018</div>
+                          
+                          <p class="mt-2">Thanks to NEST for organizing this wonderful trek and facilitating this amazing experience. NT our guide was excellent. He was always around to help and showed flexibility to ensure we where coping with every challenging day. He always had a joke on hand when things...</p>
                         </div>
-                        <div class="testimonial-user_name text-black pt-3">
-                          Chris Adams
-                        </div>       
-                        <div class="testimonial-user_location pt-1">
-                          Cape Town Central, South Africa
-                        </div>
-                      </div>              
-                    </div><!-- col 4 user pics ends here -->
-                    <div class="col-8 py-5 bg-white">
-                      <div class="px-4 testimonial-content">
-                        <h4>Manaslu circuit with group of 5</h4>
-                        <div class="float-left">
-                          <ul class="mb-0 rating list-unstyled">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                          </ul>of 25 Reviews</div> 
-                        <div class="d-inline-block ml-2 pl-2 mt-2 mt-md-0 date mb-3 mb-xl-0">December, 23, 2018</div>
-                        
-                        <p class="mt-2">Thanks to NEST for organizing this wonderful trek and facilitating this amazing experience. NT our guide was excellent. He was always around to help and showed flexibility to ensure we where coping with every challenging day. He always had a joke on hand when things...</p>
-                      </div>
-                  </div> <!-- col-8 testimonials ends here -->
-                </div> <!-- row testimonials ends here -->               
-              </div> <!-- our special slider item ends here -->
+                    </div> <!-- col-8 testimonials ends here -->
+                  </div> <!-- row testimonials ends here -->               
+                </div> <!-- our special slider item ends here -->
 
-              
-              <div>
-                <div class="row no-gutters align-items-center h-100 testimonial-bg">
-                    <div class="col-4 py-5 testimonial-left">
-                      <div class="px-4">
-                        <div class="testimonial-user mx-auto">
-                            <img src="assets/images/img-special.jpg" alt="Testimonials">
+                
+                <div>
+                  <div class="row no-gutters align-items-center h-100 testimonial-bg">
+                      <div class="col-sm-4 py-5 testimonial-left">
+                        <div class="px-4">
+                          <div class="testimonial-user mx-auto">
+                              <img src="assets/images/img-special.jpg" alt="Testimonials">
+                          </div>
+                          <div class="testimonial-user_name text-black pt-3">
+                            Chris Adams
+                          </div>       
+                          <div class="testimonial-user_location pt-1">
+                            Cape Town Central, South Africa
+                          </div>
+                        </div>              
+                      </div><!-- col 4 user pics ends here -->
+                      <div class="col-sm-8 py-5 bg-white">
+                        <div class="px-4 testimonial-content">
+                          <h4>Manaslu circuit with group of 5</h4>
+                          <div class="float-left">
+                            <ul class="mb-0 rating list-unstyled">
+                              <li><a href=""></a></li>
+                              <li><a href=""></a></li>
+                              <li><a href=""></a></li>
+                            </ul>of 25 Reviews</div> 
+                          <div class="d-inline-block ml-2 pl-2 mt-2 mt-sm-0 date mb-3 mb-xl-0">December, 23, 2018</div>
+                          
+                          <p class="mt-2">Thanks to NEST for organizing this wonderful trek and facilitating this amazing experience. NT our guide was excellent. He was always around to help and showed flexibility to ensure we where coping with every challenging day. He always had a joke on hand when things...</p>
                         </div>
-                        <div class="testimonial-user_name text-black pt-3">
-                          Chris Adams
-                        </div>       
-                        <div class="testimonial-user_location pt-1">
-                          Cape Town Central, South Africa
-                        </div>
-                      </div>              
-                    </div><!-- col 4 user pics ends here -->
-                    <div class="col-8 py-5 bg-white">
-                      <div class="px-4 testimonial-content">
-                        <h4>Manaslu circuit with group of 5</h4>
-                        <div class="float-left">
-                          <ul class="mb-0 rating list-unstyled">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                          </ul>of 25 Reviews</div> 
-                        <div class="d-inline-block ml-2 pl-2 mt-2 mt-md-0 date mb-3 mb-xl-0">December, 23, 2018</div>
-                        
-                        <p class="mt-2">Thanks to NEST for organizing this wonderful trek and facilitating this amazing experience. NT our guide was excellent. He was always around to help and showed flexibility to ensure we where coping with every challenging day. He always had a joke on hand when things...</p>
-                      </div>
-                  </div> <!-- col-8 testimonials ends here -->
-                </div> <!-- row testimonials ends here -->               
-              </div> <!-- our special slider item ends here -->
+                    </div> <!-- col-8 testimonials ends here -->
+                  </div> <!-- row testimonials ends here -->               
+                </div> <!-- our special slider item ends here -->
 
-              <div>
-                <div class="row no-gutters align-items-center h-100 testimonial-bg">
-                    <div class="col-4 py-5 testimonial-left">
-                      <div class="px-4">
-                        <div class="testimonial-user mx-auto">
-                            <img src="assets/images/img-special.jpg" alt="Testimonials">
+                <div>
+                  <div class="row no-gutters align-items-center h-100 testimonial-bg">
+                      <div class="col-sm-4 py-5 testimonial-left">
+                        <div class="px-4">
+                          <div class="testimonial-user mx-auto">
+                              <img src="assets/images/img-special.jpg" alt="Testimonials">
+                          </div>
+                          <div class="testimonial-user_name text-black pt-3">
+                            Chris Adams
+                          </div>       
+                          <div class="testimonial-user_location pt-1">
+                            Cape Town Central, South Africa
+                          </div>
+                        </div>              
+                      </div><!-- col 4 user pics ends here -->
+                      <div class="col-sm-8 py-5 bg-white">
+                        <div class="px-4 testimonial-content">
+                          <h4>Manaslu circuit with group of 5</h4>
+                          <div class="float-left">
+                            <ul class="mb-0 rating list-unstyled">
+                              <li><a href=""></a></li>
+                              <li><a href=""></a></li>
+                              <li><a href=""></a></li>
+                            </ul>of 25 Reviews</div> 
+                          <div class="d-inline-block ml-2 pl-2 mt-2 mt-sm-0 date mb-3 mb-xl-0">December, 23, 2018</div>
+                          
+                          <p class="mt-2">Thanks to NEST for organizing this wonderful trek and facilitating this amazing experience. NT our guide was excellent. He was always around to help and showed flexibility to ensure we where coping with every challenging day. He always had a joke on hand when things...</p>
                         </div>
-                        <div class="testimonial-user_name text-black pt-3">
-                          Chris Adams
-                        </div>       
-                        <div class="testimonial-user_location pt-1">
-                          Cape Town Central, South Africa
-                        </div>
-                      </div>              
-                    </div><!-- col 4 user pics ends here -->
-                    <div class="col-8 py-5 bg-white">
-                      <div class="px-4 testimonial-content">
-                        <h4>Manaslu circuit with group of 5</h4>
-                        <div class="float-left">
-                          <ul class="mb-0 rating list-unstyled">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                          </ul>of 25 Reviews</div> 
-                        <div class="d-inline-block ml-2 pl-2 mt-2 mt-md-0 date mb-3 mb-xl-0">December, 23, 2018</div>
-                        
-                        <p class="mt-2">Thanks to NEST for organizing this wonderful trek and facilitating this amazing experience. NT our guide was excellent. He was always around to help and showed flexibility to ensure we where coping with every challenging day. He always had a joke on hand when things...</p>
-                      </div>
-                  </div> <!-- col-8 testimonials ends here -->
-                </div> <!-- row testimonials ends here -->               
-              </div> <!-- our special slider item ends here -->
+                    </div> <!-- col-8 testimonials ends here -->
+                  </div> <!-- row testimonials ends here -->               
+                </div> <!-- our special slider item ends here -->
 
 
-            </div> <!-- our special slider ends here -->
+              </div> <!-- our special slider ends here -->
+            </div>
           </div> <!-- col md 8 ends here -->
         </div> <!-- row block special ends here -->
       </div> <!-- container block special ends here -->
@@ -682,12 +688,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/vendor/popper.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.min.js"></script>
-  <script src="assets/js/vendor/slick.min.js"></script>
-  <script src="assets/js/vendor/wow.min.js"></script>
-  <script src="assets/js/vendor/smooth-scroll.js"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/main.min.js"></script>
 </body>
 
 </html>

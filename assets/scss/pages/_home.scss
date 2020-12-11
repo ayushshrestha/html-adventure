@@ -7,6 +7,13 @@ html {
     // .row {
     //     margin-right: -20%;
     // }
+    .wrapper-right {
+        &_inside {
+            @include media-breakpoint-down(xs){
+                padding-right: 15px !important;
+            }
+        }
+    }
     .slick {
         &-slide {
             overflow: hidden;
@@ -191,11 +198,14 @@ html {
         }
     }
     &_title {
-        @include media-breakpoint-up(lg){
+        @include media-breakpoint-up(md){
             margin-left: -22%;
             z-index: 10;
             position: relative;
             max-width: 289px;
+        }
+        @include media-breakpoint-only(md){
+            margin-left: -42%;
         }
     }
     &_price {
@@ -267,6 +277,13 @@ html {
         @include media-breakpoint-up(md){
             width: 43%;
             // width: 38%;
+        }
+    }
+    .wrapper-right {
+        &_inside {
+            @include media-breakpoint-down(sm){
+                padding-right: 15px !important;
+            }
         }
     }
     .slick {
